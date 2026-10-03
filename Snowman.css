@@ -1,0 +1,126 @@
+
+.vinter {
+  height: 200px;
+  background: lightblue;
+  border: 3px solid cyan;
+
+}
+.snogubbe {
+  width: 200px;
+  height: 320px;
+  margin: 40px auto 0;
+    position: relative;
+  /* TODO 1: Gör snögubben till referens för dess delar */
+}
+.huvud {
+  width: 120px;
+  height: 120px;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  background: white;
+  position:absolute;
+  left: 25px;
+  top: 10px;
+  z-index: 2;
+  /* TODO 2: Placera huvudet 40px från snögubbens vänsterkant */
+}
+.kropp {
+  width: 180px;
+  height: 180px;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  background: white;
+  position:absolute;
+  top: 105px;
+  z-index: 1;
+  /* TODO 3: Placera kroppen 105px från snögubbens överkant */
+  /* Centrera den horisontellt */
+}
+.oga,
+.knapp {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: black;
+}
+.oga-vanster {
+  position:absolute;
+  left: 30px;
+  top: 40px;
+  /* TODO 4: 30px från huvudets vänsterkant & 40px uppifrån */
+}
+.oga-hoger {
+  position:absolute;
+  left: 75px;
+  top: 40px;
+  /* TODO 5: 75px från huvudets vänsterkant & 40px uppifrån */
+}
+.nasa {
+  position:absolute;
+  left: 60px;
+  top: 70px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 35px solid orange;
+  /* TODO 6: Placera näsan mitt i ansiktet */
+}
+.knapp-ett {
+  position:absolute;
+  left: 80px;
+  top: 40px;
+  /* TODO 7: 80px från kroppens vänsterkant & 40px uppifrån */
+}
+.knapp-tva {
+  position:absolute;
+  left: 80px;
+  top: 75px;
+  /* TODO 8: samma vänsterläge, 75px uppifrån */
+}
+.knapp-tre {
+  position:absolute;
+  left: 80px;
+  top: 110px;
+  /* TODO 9: samma vänsterläge, 110px uppifrån */
+}
+.hatt {
+  z-index: 3;
+  position:absolute;
+  bottom: 300px;
+  left: 25px;
+  width: 120px;
+  height: 70px;
+  /* TODO 10: Placera hatten ovanför huvudet */
+}
+.hatt-topp {
+  width: 80px;
+  height: 55px;
+  margin: 0 auto;
+  background: black;
+}
+.hatt-bratte {
+  width: 120px;
+  height: 15px;
+  background: black;
+}
+.arm {
+  width: 80px;
+  height: 8px;
+  background: brown;
+  z-index: 0;
+  position:absolute;
+  /* TODO 11: Låt armarna kunna placeras fritt */
+}
+.arm-vanster {
+  right: 175px;
+  bottom: 150px;
+  transform:rotate(160deg)
+  /* VG TODO 12: Placera armen på kroppens vänstra sida */
+}
+.arm-hoger {
+  left:160px;
+  bottom: 150px;
+  transform:rotate(20deg)
+  /* VG TODO 13: Placera armen på kroppens högra sida */
+}
